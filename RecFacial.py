@@ -14,7 +14,7 @@ font= cv2.FONT_HERSHEY_SIMPLEX
 #iniciate id counter
 id= 0
 # names related to ids: example==> Marcelo: id=1,  etc
-names= ['Oscar', 'Brayan', 'Zoe', 'Rebeca', 'A', 'Z'] 
+names= ['Name1', 'Name2', 'Name3', 'Name4', 'A', 'Z'] 
 # Initialize and start realtime video capture
 cam= cv2.VideoCapture(0)
 cam.set(3, 640) # set video widht
@@ -36,7 +36,7 @@ while True:
    GPIO.setup(12,GPIO.OUT)
    id= names[id]
    GPIO.output(12, GPIO.LOW)
-   confidence= "  {0}%".format(round(120 - confidence))
+   confidence= "  {0}%".format(round(100 - confidence))
    time.sleep(5)
    GPIO.cleanup()
   else:
