@@ -9,8 +9,6 @@ Para el funcionamiento correcto se tiene que crear 3 carpetas dentro de la que c
 
 -FacialRecognition
 
-Se debe mover el archivo "trainer.yml" dentro de la carpeta "trainer", mientras que las otras 2 tienen que estar vacías
-
 #------------------------------PASOS---------------------------------------------------------
 
 1.- Entrar en la siguiente liga para la conexion de la camara https://descubrearduino.com/conectar-camara-raspberry-pi/
@@ -49,7 +47,7 @@ python Test.py
 
 python Detec.py
 
-5.- Para guardar una base de datos de rostros ejecuta:
+5.- Para guardar una base de datos de rostros ejecuta(El primer rostro se tiene que guardar como "0", el segundo como "1" y asi sucesivamente):
 
 python save.py
 
@@ -57,6 +55,6 @@ python save.py
 
 python Trainer.py
 
-7.- Por ultimo conectamos el circuito de la chapa electrica al puerto 12 de la raspberry y ejecutamos el programa
+7.- Por ultimo conectamos el circuito de la chapa electrica al puerto 12 de la raspberry y ejecutamos el programa(Para cambiar el nombre del usuario guardado como "0" tienes que modificar en la linea 17 e ingresar el nombre del usuario que desees):
 
 python RecFacial.py
