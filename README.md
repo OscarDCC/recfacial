@@ -41,6 +41,8 @@ wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
 sudo pip3 install numpy
 
+sudo pip install pillow
+
 4.- Primero se tendra que hacer la prueba de la camara y de la deteccion del rostro con:
 
 python Test.py
